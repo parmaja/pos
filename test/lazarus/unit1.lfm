@@ -1,0 +1,62 @@
+object Form1: TForm1
+  Left = 432
+  Height = 281
+  Top = 190
+  Width = 227
+  HorzScrollBar.Page = 318
+  VertScrollBar.Page = 165
+  Caption = 'Form1'
+  ClientHeight = 261
+  ClientWidth = 227
+  Color = clBlack
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '0.9.29'
+  object POSButton1: TposButton
+    Left = 6
+    Height = 26
+    Top = 216
+    Width = 95
+    ParentColor = False
+    Color = 7849617
+    OnClick = POSButton1Click
+    TabStop = False
+    Caption = 'Ok'
+  end
+  object Stuffs: TposStuffs
+    Left = 5
+    Height = 180
+    Top = 5
+    Width = 207
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ParentBiDiMode = False
+    ParentFont = False
+    ParentColor = False
+    Font.CharSet = ARABIC_CHARSET
+    Font.Color = clWhite
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Color = clNavy
+    BorderWidth = 0
+    Margin = 0
+    TabStop = False
+    Caption = 'Stuffs'
+    ItemHeight = 64
+  end
+  object MainMenu1: TMainMenu
+    left = 127
+    top = 64
+    object MenuItem1: TMenuItem
+      Caption = 'خروج'
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'أدوات'
+      object MenuItem3: TMenuItem
+        Caption = 'مواد'
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'طاولات'
+      end
+    end
+  end
+end
